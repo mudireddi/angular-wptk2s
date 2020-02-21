@@ -3,11 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { DeprecatedComponent } from './deprecated.component';
+import { ComponentTwo } from './component.two';
+import { ComponentOne } from './component.one';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, DeprecatedComponent ],
+  declarations: [ AppComponent, ComponentTwo, ComponentOne ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

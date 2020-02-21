@@ -2,12 +2,12 @@ import { Component, Input } from '@angular/core';
 import { Deprecated } from './decorators';
 
 @Component({
-  selector: 'deprecated-comp, new-comp',
-  template: `<h1>{{name}}!</h1>`,
+  selector: 'component-one',
+  template: `<h1>Component One!</h1>`,
   styles: [`h1 { font-family: Lato; }`]
 })
 
-@Deprecated("deprecated-comp")
-export class DeprecatedComponent  {
+@Deprecated('component-one', 'component-two')
+export class ComponentOne  {
   @Input() name: string;
 }
